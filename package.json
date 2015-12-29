@@ -1,0 +1,40 @@
+{
+  "name": "kanban_app",
+  "version": "0.1.0",
+  "description": "Kanban Application with React",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react",
+    "kanban"
+  ],
+  "author": "David Gómez",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.3.26",
+    "babel-loader": "^6.2.0",
+    "babel-plugin-react-transform": "^2.0.0",
+    "babel-plugin-transform-class-properties": "^6.3.13",
+    "babel-plugin-transform-decorators": "^6.3.13",
+    "babel-plugin-transform-es2015-classes": "^6.3.15",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.3.16",
+    "babel-plugin-transform-object-rest-spread": "^6.3.13",
+    "babel-preset-react": "^6.3.13",
+    "babel-preset-stage-2": "^6.3.13",
+    "css-loader": "^0.23.1",
+    "html-webpack-plugin": "^1.7.0",
+    "react-transform-hmr": "^1.0.1",
+    "style-loader": "^0.13.0",
+    "webpack": "^1.12.9",
+    "webpack-dev-server": "^1.14.0",
+    "webpack-merge": "^0.5.1"
+  },
+  "dependencies": {
+    "node-uuid": "^1.4.7",
+    "react": "^0.14.3",
+    "react-dom": "^0.14.3"
+  }
+}
