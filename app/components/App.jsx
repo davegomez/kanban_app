@@ -35,7 +35,7 @@ export default class App extends Component {
 
   editNote = (id, task) => {
     const notes = this.state.notes.map(note => {
-      if (note.id === id) {
+      if (note.id === id && task) {
         note.task = task;
       }
 
@@ -45,13 +45,19 @@ export default class App extends Component {
     this.setState({notes});
   };
 
+  deleteNote = (id) => {
+    this.setState({
+      notes: this.state.notes.filter(note => note.id !== id)
+    });
+  };
+
   render () {
     const notes = this.state.notes;
 
     return (
       <div>
         <button className="add-note" onClick={this.addNote}>+</button>
-        <Notes items={notes} onEdit={this.editNote} />
+        <Notes items={notes} onEdit={this.editNote} onDelete={this.deleteNote} />
       </div>
     );
   }
