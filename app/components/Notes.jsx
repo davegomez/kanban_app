@@ -11,7 +11,7 @@ export default class Notes extends Component {
           onDelete={this.props.onDelete.bind(null, note.id)} />
       </li>
     );
-  }
+  };
 
   render () {
     const notes = this.props.items;
